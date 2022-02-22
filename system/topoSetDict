@@ -112,7 +112,7 @@ actions
     {
         name    cover_set;
         type    cellSet;
-        action  new;
+        action  add;
         source  zoneToCell;
         sourceInfo
         {
@@ -122,7 +122,7 @@ actions
     {
         name    cover_set;
         type    cellSet;
-        action  new;
+        action  add;
         source  zoneToCell;
         sourceInfo
         {
@@ -132,7 +132,7 @@ actions
     {
         name    cover_set;
         type    cellSet;
-        action  new;
+        action  add;
         source  zoneToCell;
         sourceInfo
         {
@@ -142,7 +142,7 @@ actions
     {
         name    cover_set;
         type    cellSet;
-        action  new;
+        action  add;
         source  zoneToCell;
         sourceInfo
         {
