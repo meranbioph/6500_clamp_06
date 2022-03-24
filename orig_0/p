@@ -9,39 +9,41 @@ FoamFile
 {
     format      ascii;
     class       volScalarField;
-    location    "0";
-    object      Tf;
+    object      p;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 0 0 1 0 0 0];
+dimensions      [0 2 -2 0 0 0 0];
 
-internalField   uniform 300;
+internalField   uniform 0;
 
 boundaryField
 {
     inlet
     {
-        type            fixedValue;
-        value           uniform 300;
-    }
-    outlet
-    {
         type            zeroGradient;
     }
+
+    outlet
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+
     top
     {
         type            symmetryPlane;
     }
+    
     ground
     {
         type            zeroGradient;
     }
+
     frontAndBack
     {
         type            empty;
     }
 }
-
 
 // ************************************************************************* //
